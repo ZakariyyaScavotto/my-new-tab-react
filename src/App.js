@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { setDisplay } from "./utils/day"
 import { clock } from "./utils/clock"
 import { quote } from "./utils/quote"
+import { Helmet } from "react-helmet"
 import Clock from "./components/Clock"
 import Day from "./components/Day"
 import QuickLinks from "./components/QuickLinks"
@@ -29,6 +30,9 @@ function App() {
 	}, [currentDay])
 	return (
 		<div className="App">
+			<Helmet>
+				<title>New Tab</title>
+			</Helmet>
 			<Clock />
 			<div id="quoteArea"></div>
 			<div id="rightSide">
