@@ -17,10 +17,10 @@
 .App .classes .thursday .containerThursday > p,
 .App .classes .friday .containerFriday > p,
 .App .classes .weekend .containerWeekend > p {
-	/* display: inline-block; */
 	width: fit-content;
 	outline-style: solid;
 	outline-color: var(--platinum);
 	border-radius: 8px;
 	padding: 5px;
+	font-size: 1.5vw;
 }
