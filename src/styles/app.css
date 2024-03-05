@@ -25,12 +25,13 @@ body {
 }
 
 h1 {
+	font-size: 3vw;
 	text-align: center;
 	color: var(--platinum);
 }
 
 p {
-	font-size: 18px;
+	font-size: 1vw;
 	color: var(--platinum);
 }
 
@@ -48,7 +49,8 @@ a {
 
 .App > #quoteArea {
 	color: var(--platinum);
-	font-size: 30px;
+	/* font-size: 30px; */
+	font-size: 2vw;
 	text-align: center;
 	display: flex;
 	justify-content: center;
