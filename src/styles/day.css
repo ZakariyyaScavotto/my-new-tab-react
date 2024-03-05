@@ -1,0 +1,26 @@
+.App .classes .monday .containerMonday,
+.App .classes .tuesday .containerTuesday,
+.App .classes .wednesday .containerWednesday,
+.App .classes .thursday .containerThursday,
+.App .classes .friday .containerFriday,
+.App .classes .weekend .containerWeekend {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: center;
+	gap: 10px;
+	justify-items: center;
+}
+
+.App .classes .monday .containerMonday > p,
+.App .classes .tuesday .containerTuesday > p,
+.App .classes .wednesday .containerWednesday > p,
+.App .classes .thursday .containerThursday > p,
+.App .classes .friday .containerFriday > p,
+.App .classes .weekend .containerWeekend > p {
+	/* display: inline-block; */
+	width: fit-content;
+	outline-style: solid;
+	outline-color: var(--platinum);
+	border-radius: 8px;
+	padding: 5px;
+}

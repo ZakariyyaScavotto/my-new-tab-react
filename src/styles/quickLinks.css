@@ -1,0 +1,16 @@
+#QuickLinks {
+	grid-column: span 2;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+}
+#QuickLinks > p {
+	/* width: fit-content; */
+	text-align: center;
+	/* outline-style: solid; */
+	outline-color: var(--platinum);
+	border-radius: 8px;
+	padding: 5px;
+}

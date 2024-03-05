@@ -1,0 +1,9 @@
+.App > #clock {
+	color: var(--platinum);
+	font-size: 56px;
+	text-align: center;
+	position: fixed;
+	top: 10px;
+	left: 50%; /* move the left edge to the center of the page */
+	transform: translateX(-50%); /* shift it back by half its width */
+}
