@@ -1,33 +1,33 @@
-import "./styles/app.css"
-import { useEffect, useState } from "react"
-import { setDisplay } from "./utils/day"
-import { clock } from "./utils/clock"
-import { quote } from "./utils/quote"
-import { Helmet } from "react-helmet"
-import Clock from "./components/Clock"
-import Day from "./components/Day"
-import QuickLinks from "./components/QuickLinks"
+import "./styles/app.css";
+import { useEffect, useState } from "react";
+import { setDisplay } from "./utils/day";
+import { clock } from "./utils/clock";
+import { quote } from "./utils/quote";
+import { Helmet } from "react-helmet";
+import Clock from "./components/Clock";
+import Day from "./components/Day";
+import QuickLinks from "./components/QuickLinks";
 
 function App() {
-	const [currentDay, setCurrentDay] = useState(0)
-	const [currentDate, setCurrentDate] = useState(new Date())
+	const [currentDay, setCurrentDay] = useState(0);
+	const [currentDate, setCurrentDate] = useState(new Date());
 	const updateCurrentDay = () => {
-		const currentDate = new Date()
-		let dayOfWeek = currentDate.getDay()
+		const currentDate = new Date();
+		let dayOfWeek = currentDate.getDay();
 		// Adjust to start from Monday (1)
-		dayOfWeek = dayOfWeek === 0 ? 7 : dayOfWeek
-		setCurrentDay(dayOfWeek)
-		setCurrentDate(currentDate)
-	}
+		dayOfWeek = dayOfWeek === 0 ? 7 : dayOfWeek;
+		setCurrentDay(dayOfWeek);
+		setCurrentDate(currentDate);
+	};
 
 	useEffect(() => {
-		updateCurrentDay()
-		clock()
-		quote()
-	}, [])
+		updateCurrentDay();
+		clock();
+		quote();
+	}, []);
 	useEffect(() => {
-		setDisplay({ currentDay })
-	}, [currentDay])
+		setDisplay({ currentDay });
+	}, [currentDay]);
 	return (
 		<div className="App">
 			<Helmet>
@@ -37,7 +37,8 @@ function App() {
 			<div id="quoteArea"></div>
 			<div id="rightSide">
 				<div className="classes">
-					<Day
+					{
+						/* <Day
 						day="Monday"
 						items={["CS 392-A", "CS 496-B", "Hold CS 284 OH"]}
 						date={currentDate}
@@ -69,7 +70,18 @@ function App() {
 						]}
 						date={currentDate}
 					/>
-					<Day day="Weekend" items={["Work", "Fun!"]} date={currentDate} />
+					<Day day="Weekend" items={["Work", "Fun!"]} date={currentDate} /> */
+						<Day
+							day="Summer"
+							items={[
+								"Research Work",
+								"Apply to internships",
+								"Work on personal projects",
+								"Have fun!"
+							]}
+							date={currentDate}
+						/>
+					}
 				</div>
 			</div>
 			<QuickLinks
@@ -82,7 +94,7 @@ function App() {
 				]}
 			/>
 		</div>
-	)
+	);
 }
 
-export default App
+export default App;

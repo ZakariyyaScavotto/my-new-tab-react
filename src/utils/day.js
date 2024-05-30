@@ -1,16 +1,24 @@
 const show = (classname) => {
-	const elements = document.getElementsByClassName(classname)
+	const elements = document.getElementsByClassName(classname);
 	for (let i = 0; i < elements.length; i++) {
-		elements[i].style.display = "block"
+		elements[i].style.display = "block";
 	}
-}
+};
 const hide = (classname) => {
-	const elements = document.getElementsByClassName(classname)
+	const elements = document.getElementsByClassName(classname);
 	for (let i = 0; i < elements.length; i++) {
-		elements[i].style.display = "none"
+		elements[i].style.display = "none";
 	}
-}
+};
 export const setDisplay = (day) => {
+	show("Summer");
+	hide("monday");
+	hide("tuesday");
+	hide("wednesday");
+	hide("thursday");
+	hide("friday");
+	hide("weekend");
+	/*
 	if (day["currentDay"] === 1) {
 		show("monday")
 		hide("tuesday")
@@ -54,4 +62,5 @@ export const setDisplay = (day) => {
 		hide("friday")
 		show("weekend")
 	}
-}
+	*/
+};

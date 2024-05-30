@@ -3,7 +3,8 @@
 .App .classes .wednesday .containerWednesday,
 .App .classes .thursday .containerThursday,
 .App .classes .friday .containerFriday,
-.App .classes .weekend .containerWeekend {
+.App .classes .weekend .containerWeekend,
+.App .classes .summer .containerSummer {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	text-align: center;
@@ -16,7 +17,8 @@
 .App .classes .wednesday .containerWednesday > p,
 .App .classes .thursday .containerThursday > p,
 .App .classes .friday .containerFriday > p,
-.App .classes .weekend .containerWeekend > p {
+.App .classes .weekend .containerWeekend > p,
+.App .classes .summer .containerSummer > p {
 	width: fit-content;
 	outline-style: solid;
 	outline-color: var(--platinum);
