@@ -19,7 +19,6 @@ function App() {
 		setCurrentDay(dayOfWeek);
 		setCurrentDate(currentDate);
 	};
-
 	useEffect(() => {
 		updateCurrentDay();
 		clock();
@@ -37,51 +36,36 @@ function App() {
 			<div id="quoteArea"></div>
 			<div id="rightSide">
 				<div className="classes">
-					{
-						/* <Day
+					<Day
 						day="Monday"
-						items={["CS 392-A", "CS 496-B", "Hold CS 284 OH"]}
+						items={["CS 396-A", "ACC 200-C", "Gym", "CS 385 CA Meeting"]}
 						date={currentDate}
 					/>
 					<Day
 						day="Tuesday"
-						items={["BT 243-D", "CS 442-A", "SSMIF"]}
+						items={["CS 334-D", "Hold CS 385 OH", "Gym", "Work"]}
 						date={currentDate}
 					/>
 					<Day
 						day="Wednesday"
-						items={["CS 392-A", "CS 496-B", "HSS 371-G", "CS Club!"]}
+						items={["CS 396-A", "ACC 200-C", "Gym", "CS Club!"]}
 						date={currentDate}
 					/>
 					<Day
 						day="Thursday"
-						items={["BT 243-D", "CS 442-A", "SSMIF"]}
+						items={["CS 334-D", "Hold CS 385 Lab", "CS 562-A", "Work"]}
 						date={currentDate}
 					/>
 					<Day
 						day="Friday"
-						items={[
-							"CS 392-A",
-							"CS 496-B",
-							"HSS 371-G",
-							"Hold CS 284 Lab",
-							"SSMIF",
-							"Orchestra!"
-						]}
+						items={["CS 396-A", "Work", "CS 559-B", "Orchestra!"]}
 						date={currentDate}
 					/>
-					<Day day="Weekend" items={["Work", "Fun!"]} date={currentDate} /> */
-						<Day
-							day="Summer"
-							items={[
-								"Research Work",
-								"Apply to internships",
-								"Work on personal projects",
-								"Have fun!"
-							]}
-							date={currentDate}
-						/>
-					}
+					<Day
+						day="Weekend"
+						items={["Sleep In", "Work", "Gym", "Fun!"]}
+						date={currentDate}
+					/>
 				</div>
 			</div>
 			<QuickLinks
