@@ -38,27 +38,27 @@ function App() {
 				<div className="classes">
 					<Day
 						day="Monday"
-						items={["CS 396-A", "ACC 200-C", "Gym", "CS 385 CA Meeting"]}
+						items={["CS 492-B", "Work", "CS 810-B", "CS 546-A"]}
 						date={currentDate}
 					/>
 					<Day
 						day="Tuesday"
-						items={["CS 334-D", "Hold CS 385 OH", "Gym", "Work"]}
+						items={["Work", "Gym", "Hold CS 284 OH", "FE 530-A"]}
 						date={currentDate}
 					/>
 					<Day
 						day="Wednesday"
-						items={["CS 396-A", "ACC 200-C", "Gym", "CS Club!"]}
+						items={["CS 492-B", "Work", "Gym", "CS Club!"]}
 						date={currentDate}
 					/>
 					<Day
 						day="Thursday"
-						items={["CS 334-D", "Hold CS 385 Lab", "CS 562-A", "Work"]}
+						items={["Work", "Gym", "CS 511-A", "More Work"]}
 						date={currentDate}
 					/>
 					<Day
 						day="Friday"
-						items={["CS 396-A", "Work", "CS 559-B", "Orchestra!"]}
+						items={["CS 492-B", "Hold 284 Lab", "CS 583-B", "Orchestra!"]}
 						date={currentDate}
 					/>
 					<Day
