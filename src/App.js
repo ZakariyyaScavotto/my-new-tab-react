@@ -36,19 +36,27 @@ function App() {
 			<div id="quoteArea"></div>
 			<div id="rightSide">
 				<div className="classes">
-					<Day day="Monday" items={["Internship", "Gym"]} date={currentDate} />
-					<Day day="Tuesday" items={["Internship", "Gym"]} date={currentDate} />
+					<Day
+						day="Monday"
+						items={["Gym", "Work", "BIA 660", "ACC 535"]}
+						date={currentDate}
+					/>
+					<Day
+						day="Tuesday"
+						items={["Gym", "Work", "CS 554", "More Work"]}
+						date={currentDate}
+					/>
 					<Day
 						day="Wednesday"
-						items={["Internship", "Gym"]}
+						items={["Gym", "Work", "Hold OH", "CS 558"]}
 						date={currentDate}
 					/>
 					<Day
 						day="Thursday"
-						items={["Internship", "Gym"]}
+						items={["Gym", "Work", "CS 555", "Fun!"]}
 						date={currentDate}
 					/>
-					<Day day="Friday" items={["Internship", "Gym"]} date={currentDate} />
+					<Day day="Friday" items={["Work", "Orchestra"]} date={currentDate} />
 					<Day
 						day="Weekend"
 						items={["Sleep In", "Work", "Gym", "Fun!"]}
